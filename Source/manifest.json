@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Serverless to Poop Emoji",
+	"version": "1.0",
+	"description": "Replaces the text 'serverless' with '💩💩💩💩💩'.  The #2 rated Serverless-to-Poop extension on the internet.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
